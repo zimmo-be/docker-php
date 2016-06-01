@@ -1,13 +1,12 @@
 FROM oraclelinux:7
 
-RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
+RUN yum install -y yum-plugin-ovl && \
+    rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
     rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm && \
     yum update -y && \
     yum install -y \
-        httpd php70w php70w-cli php70w-common php70w-bcmath php70w-gd php70w-imap php70w-intl \
-        php70w-mbstring php70w-mcrypt php70w-mysql php70w-opcache php70w-pdo php70w-pear php70w-soap php70w-tidy \
-        php70w-xml && \
-    yum autoremove -y && \
+        httpd php70w php70w-cli php70w-common php70w-bcmath php70w-gd php70w-imap php70w-intl php70w-mbstring \
+        php70w-mcrypt php70w-mysql php70w-opcache php70w-pdo php70w-pear php70w-soap php70w-tidy php70w-xml && \
     yum clean all
 
 RUN yum install -y php70w-devel gcc openssl-devel make && \
