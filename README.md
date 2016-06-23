@@ -5,6 +5,7 @@
 * 7.0-apache-oraclelinux [(7.0/apache/oraclelinux/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/7.0/apache/oraclelinux/Dockerfile)
 * 5.6-apache-oraclelinux [(5.6/apache/oraclelinux/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/5.6/apache/oraclelinux/Dockerfile)
 * 5.5-apache-oraclelinux [(5.5/apache/oraclelinux/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/5.5/apache/oraclelinux/Dockerfile)
+* 5.3-apache-centos-5 [(5.3/apache/centos-5/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/5.3/apache/centos-5/Dockerfile)
 
 #### FPM
 
