@@ -7,7 +7,7 @@ RUN yum install -y yum-plugin-ovl \
     && yum install -y \
         git httpd \
         php55w php55w-cli php55w-common php55w-bcmath php55w-gd php55w-imap php55w-intl php55w-mbstring \
-        php55w-mcrypt php55w-mysql php55w-opcache php55w-pdo php55w-pear php55w-soap php55w-tidy php55w-xml \
+        php55w-mcrypt php55w-mysql php55w-pdo php55w-pear php55w-soap php55w-tidy php55w-xml \
     && yum clean all
 
 RUN yum install -y php55w-devel gcc openssl-devel make \

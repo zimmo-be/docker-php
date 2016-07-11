@@ -4,7 +4,7 @@ RUN apk upgrade --update && \
     apk add --no-cache icu sqlite git && \
     apk add --no-cache --virtual .build-deps icu-dev libxml2-dev sqlite-dev curl-dev && \
     docker-php-ext-install \
-        bcmath curl ctype iconv intl json mbstring opcache pdo pdo_mysql pdo_sqlite tokenizer xml && \
+        bcmath curl ctype iconv intl json mbstring pdo pdo_mysql pdo_sqlite tokenizer xml && \
     apk del .build-deps
 
 RUN apk add --no-cache --virtual .build-deps $PHPIZE_DEPS openssl-dev && \
