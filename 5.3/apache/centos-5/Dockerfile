@@ -1,7 +1,7 @@
 FROM centos:5
 
 RUN yum install -y wget httpd php53 php53-cli php53-common php53-bcmath php53-gd \
-            php53-imap php53-mbstring php53-mysql php53-pdo php53-snmp
+            php53-imap php53-mbstring php53-mysql php53-pdo php53-snmp php-xml
 RUN yum clean all
 
 WORKDIR /home
