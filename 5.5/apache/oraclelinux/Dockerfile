@@ -4,6 +4,7 @@ RUN yum install -y yum-plugin-ovl \
     && rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm \
     && rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm \
     && yum update -y \
+    && yum reinstall -y glibc-common \
     && yum install -y \
         git httpd \
         php55w php55w-cli php55w-common php55w-bcmath php55w-gd php55w-imap php55w-intl php55w-mbstring \
