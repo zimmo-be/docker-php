@@ -12,6 +12,7 @@
 
 * 7.0-fpm-oraclelinux [(7.0/fpm/oraclelinux/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/7.0/fpm/oraclelinux/Dockerfile)
 * 7.0-fpm-alpine [(7.0/fpm/alpine/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/7.0/fpm/alpine/Dockerfile)
+* 7.1-fpm-alpine [(7.1/fpm/alpine/Dockerfile)](https://github.com/zimmo-be/docker-php/blob/master/7.1/fpm/alpine/Dockerfile)
 
 # How to use this image
 
