@@ -1,7 +1,7 @@
 FROM php:7.1-fpm-alpine
 
 RUN apk upgrade --update && \
-    apk add --no-cache icu sqlite git && \
+    apk add --no-cache icu sqlite git openssh && \
     apk add --no-cache --virtual .build-deps icu-dev libxml2-dev sqlite-dev curl-dev && \
     docker-php-ext-install \
         bcmath curl ctype iconv intl json mbstring pdo pdo_mysql pdo_sqlite tokenizer xml && \
