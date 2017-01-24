@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get autoremove --purge php5-* && \
     add-apt-repository -y ppa:ondrej/php && apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y php7.1 php7.1-cli php7.1-common php7.1-bcmath php7.1-gd php7.1-imap php7.1-intl php7.1-mbstring \
-    php7.1-mcrypt php7.1-mysql php7.1-soap php7.1-tidy php7.1-xml php7.1-gmp php-redis php-mongodb php7.1-sqlite3 && \
+    php7.1-mcrypt php7.1-mysql php7.1-soap php7.1-tidy php7.1-xml php7.1-gmp php-redis php-mongodb php7.1-sqlite3 php7.1-curl && \
     apt-get clean
 
 RUN a2enmod rewrite
