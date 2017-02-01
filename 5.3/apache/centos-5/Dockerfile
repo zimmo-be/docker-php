@@ -12,7 +12,7 @@ RUN rpm -K rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
 RUN rpm -i rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
 RUN yum install -y git
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composerv
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=1.0.0
 
 RUN mkdir -p /var/www/project && \
     chown -R apache:apache /var/www/project && \
